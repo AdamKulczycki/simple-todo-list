@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <meta name="TodoList" content="ToDo List">
+    <meta name="Adam Kulczycki">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="todo">
+        <form class="todo__form" id="todoForm">
+            <label for="todo-input">Todo List</label>
+            <textarea class="todo__input" type="text" name="todo-input" id="todo-input"></textarea>
+            <button class="todo__btn" type="submit">Add Task</button>
+        </form>
+        <section>
+            <header class="todo__search">
+                <span class="todo__head-bar">List of Tasks&nbsp;
+                    <button class="todo__sort-btn" id="sortBtn" type="button">
+                        <i class="fas fa-sort-amount-down todo__sort-icon" id="sortIcon"></i>
+                    </button>
+                </span>
+                <form class="todo__search-form">
+                    <label for="todo-search" class="visuallyhidden">Search</label>
+                    <input class="todo__search-input" type="text" name="todo-search" id="todo-search">
+                    <i class="fas fa-search todo__search-icon"></i>
+                </form>
+            </header>
+            <ul class="todo__list" id="todoList">
+                <li class="todo__item">
+                    <div class="todo__bar">
+                        <div class="todo__date">2019/04/11 21:05</div>
+                        <button class="todo__delete"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="todo__content">
+                        task1
+                    </div>
+                </li>
+                <li class="todo__item">
+                    <div class="todo__bar">
+                        <div class="todo__date">2019/04/13 21:05</div>
+                        <button class="todo__delete"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="todo__content">
+                        task2
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

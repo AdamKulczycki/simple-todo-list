@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeef5;
+    margin: 8px;
+}
+
+.todo__form, .todo__search, .todo__item {
+    box-shadow: rgba(177, 174, 174, 0.75) 3px 4px 5px 0px;
+}
+
+.todo {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.todo__form {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo__input {
+    width: 100%;
+    height: 8rem;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.todo__btn {
+    border: none;
+    padding: 0.8rem 1rem;
+    color: white;
+    background-color: rgb(8, 122, 65);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.todo__btn:hover {
+    background-color: rgb(54, 138, 96);
+}
+
+.todo__search {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo__head-bar {
+    display: flex;
+    align-items: center;
+}
+
+.todo__sort-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+.todo__sort-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(54, 138, 96);
+    transition: 0.5s all;
+}
+.todo__sort-icon:hover {
+    color: black;
+}
+
+.todo__search-form {
+    width: 50%;
+    position: relative;
+}
+
+.todo__search-icon {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    color: rgb(54, 138, 96);
+    transform: translateY(-50%);
+    transition: 0.5s color;
+}
+
+.todo__search-input {
+    width: 100%;
+    padding: 0.3rem;
+    padding-right: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.todo__search-input:focus + .todo__search-icon {
+    color: black;
+}
+
+.todo__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.todo__item {
+    background-color: white;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.todo__bar {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo__date {
+    text-decoration: underline;
+}
+
+.todo__delete {
+    color: red;
+    border: none;
+    font-size: 1.5rem;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.4s all;
+}
+
+.todo__delete:hover {
+    color: black;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
